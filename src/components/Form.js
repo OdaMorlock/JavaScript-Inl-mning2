@@ -22,7 +22,7 @@ const nameHandler = (e) => {
 const descriptionHandler = (e) => {
     setDescription(e.target.value)
 }
-
+// Jag får inte fälten å bli tooma när man trycker på Submit , jag förstår bara inte varför och har spenderat timmar åt att fixa det men gav upp.
 const submitHandler = (e) => {
     e.preventDefault()
     setProducts([...products, {name: name, description: description, inStock: true, id: uuid()}])
